@@ -4,6 +4,28 @@
 
 Based on [Sapper](https://github.com/sveltejs/sapper), a web app framework based on [Svelte](https://github.com/sveltejs).
 
+Sapper is **S**velte **App** Mak**er**, and is also named because "in war, the soldiers who build bridges, repair roads, clear minefields and conduct demolitions — all under combat conditions — are known as sappers."
+
+Miners are a specific [type of sappers](https://en.wikipedia.org/wiki/Sapper#Miner) that attacked forts -- much like how the Miner Framework is a specific/sub-type of Sapper apps that are for generating your blog site.
+
+## Batteries-included, ready to start in Markdown
+
+I'm a fan of the Svelte UI framework, and Sapper is a great to start a web app with.
+
+However, Sapper was created as a web app starter, and intentionally does not include some basic features one would want for a blog. These are the features Miner hopes to achieve and put in the framework, so one can start using it to blog right away without any additional code work (that would've been needed had they started with Sapper):
+
+- Write posts in Markdown.
+- One Markdown file per post for ease of maintenance and creating new posts.
+- Homepage and Blog page contains list of blog posts, sorted by latest, automatically.
+- YAML Frontmatter in each post will populate and display meta info on your blog pages including author, post date, page title, previews.
+- OpenGraph Social tags are generated with each post with title, author, description (preview text), and thumbnail picture (if provided), to optimize posts for being shared on other sites.
+- Social Sharing icons (configurable option) for Twitter, Facebook, LinkedIn, Hacker News, with future support for other social networks and Reddit planned.
+- Comments widget (configurable option) with [utteranc.es](https://utteranc.es), with future support for Facebook Comments and Disqus planned.
+- Blog pages include next article and previous article links.
+- (Opinionated :) Usable default CSS that looks good enough to start using immediately.
+
+I've also included a nodejs script I've used to import my Medium posts to my own blog. I plan to polish it up and add some documentation so it can be used if you desire.
+
 ## Example site
 
 Generated from this repo, deployed on Netlify: [https://miner-blog.netlify.app/](https://miner-blog.netlify.app/)
@@ -35,6 +57,10 @@ npm run dev
 Open up [localhost:3000](http://localhost:3000) and start clicking around.
 
 Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
+
+# Sapper
+
+Below is the documentation from Sapper, which can also come in handy when you're making customization to the code and theme of your blog.
 
 ## Structure
 
