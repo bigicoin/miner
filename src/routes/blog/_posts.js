@@ -33,7 +33,11 @@ fs.readdirSync(postsDir)
     const pageData = yamlFront.safeLoadFront(content);
     if (!pageData.slug) {
       // only autogenerate slug if not explicitly defined
-      pageData.slug = `${datePrefix(pageData.date)}${file.slice(0, -3)}`; // slug from filename
+      if (blogConfig.prefix_slug_by_date) {
+        pageData.slug = `${datePrefix(pageData.date)}${file.slice(0, -3)}`; // slug from date and filename
+      } else {
+        pageData.slug = file.slice(0, -3); // slug from filename
+      }
     }
     pageData.html = marked(pageData.__content); // parse markdown
     // TODO: Consider using DOMPurify to sanitize html

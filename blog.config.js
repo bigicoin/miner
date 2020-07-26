@@ -32,7 +32,7 @@ module.exports = {
    * Warning: If this setting is changed and you autogenerate url slugs,
    * your url slugs will all change. This can affect SEO, etc.
    */
-  prefix_slug_by_date: true,
+  prefix_slug_by_date: false,
 
   /**
    * When generating slugs off of `date` field value (ISO string), use a local
