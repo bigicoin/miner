@@ -1,0 +1,126 @@
+/* footer sticking to bottom */
+html,
+body,
+div#sapper {
+  height: 100%;
+}
+
+div#sapper {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Lora, serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/**
+ * All the CSS below needs to be here because they only appear as parsed markdown html as "data",
+ * and usage of them don't actually exist as svelte component code.
+ * If they wre defined in [slug].svelte, they would have no effect since svelte considers them
+ * unused styles and strips them.
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+a {
+  color: inherit;
+}
+
+code {
+  font-family: menlo, inconsolata, monospace;
+  font-size: calc(1em - 2px);
+  color: #555;
+  background-color: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+}
+
+div.content figure {
+  text-align: center;
+}
+
+div.content figure img {
+  max-width: 100%;
+}
+
+div.content figure figcaption {
+  text-align: center;
+  font-size: 70%;
+  color: #666;
+}
+
+div.content hr {
+  border-top: 5px dotted #ccc;
+  width: 50%;
+  margin: 50px auto;
+  color: transparent;
+}
+
+div.content blockquote {
+  border-left: 5px solid #ccc;
+  padding-left: 25px;
+  margin: 25px;
+}
+
+div.content a.linkWidget {
+  display: block;
+  margin: 40px auto;
+  padding: 1.5% 2%;
+  width: 85%;
+  border: 1px solid #ccc;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  font-size: 70%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  color: #bbb;
+}
+
+div.content a.linkWidget strong {
+  color: #333;
+}
+
+div.content a.linkWidget em {
+  display: block;
+  margin: 5px 0;
+  color: #333;
+}
+
+@media (min-width: 728px) {
+  body {
+    font-size: 21px;
+    line-height: 1.6;
+  }
+}
