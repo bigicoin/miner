@@ -56,7 +56,19 @@ npm run dev
 
 Open up [localhost:3000](http://localhost:3000) and start clicking around.
 
-Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
+(Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help on editing Svelte components and pages.)
+
+## Netlify Deploy Setup
+
+If you want to deploy your site on Netlify, you can simply follow these steps:
+
+1. Sign up for / Log in to Netlify
+1. Connect to your repo via Github/Gitlab etc.
+1. Under Build Settings, use this Build Command: `npm run export`
+1. Use this Publish Directory: `__sapper__/export`
+1. Deploy and done!
+
+---
 
 # Sapper
 
